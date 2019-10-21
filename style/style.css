@@ -9,38 +9,45 @@ html{
   height: 60px;
   margin: 0;
 }
-.logo{
+.header{
   display: flex;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.logo{
+  display: block;
   position: relative;
   vertical-align: middle;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 .logo-name h1{
   margin: 0;
   position: relative;
   top: 3px;
-  display: inline-flex;
+  display: inline;
 }
 .navigator {
+  width: 100%;
   margin: 0;
   position: relative;
   margin-left: 60px;
-  left: 90px;
 }
-.logo-name,
-.navigator{
+.logo-name{
   position: relative;
   top: 5px;
 }
+.header a{
+  transition: color ease-out 0.3s;
+}
+.header a:hover{
+  color: red;
+}
 
-
-ul{
+.header ul{
   display: inline-flex;
 }
-li,
-a{
+.header li,
+.header a{
   list-style: none;
   text-decoration: none;
 }
@@ -53,23 +60,73 @@ nav ul li{
 nav li a{
   color: white;
 }
-h1,
-ul{
+.header h1,
+.header ul{
   vertical-align: middle;
 }
 
 .form{
   display: inline-flex;
-  position: relative;
-  left: 180px;
-  background-color: #1d7b3c;
-  color: white;
+  margin-left: auto;
+  vertical-align: middle;
 }
-.form form input,
-form,
-.form{
+
+
+.form form input
+{
+  position: relative;
+  margin:0;
   background-color: #1d7b3c;
   color: white;
   border: 2px solid #1d7b3c;
   border-radius: 14px;
+  width: 80px;
+  height: 28px;
+}
+
+/*
+header,
+.logo,
+nav,
+.form,
+nav ul,
+nav li{
+  border: 1px solid red;
+}
+*/
+
+
+
+footer{
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  background-color: #0d3a46;
+  text-align: center;
+}
+
+footer .info{
+  width: 100%;
+  max-width: 670px;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+
+}
+
+footer .info a{
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 10px;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+footer span{
+  display: block;
+  font-size: 12px;
+  margin-top: 15px;
+  color: white;
 }
