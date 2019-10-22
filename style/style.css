@@ -2,6 +2,7 @@ body,
 html{
   margin: 0;
   padding: 0;
+  background-color: #1a1922;
 }
 .desing{
   background-color: #1f0e37;
@@ -45,6 +46,8 @@ html{
 
 .header ul{
   display: inline-flex;
+  position:relative;
+  top: 5px;
 }
 .header li,
 .header a{
@@ -66,9 +69,11 @@ nav li a{
 }
 
 .form{
-  display: inline-flex;
+  display: inline;
   margin-left: auto;
   vertical-align: middle;
+  position: relative;
+  top: 15px;
 }
 
 
@@ -94,8 +99,38 @@ nav li{
   border: 1px solid red;
 }
 */
+.content{
+  max-width: 1280px;
+  margin: 10px auto;
+  display: grid;
+  grid-template: repeat(8, 300px) / 1fr 1fr 1fr;
+  grid-gap: 15px;
 
 
+}
+section .block{
+  border: 4px solid white;
+  border-radius: 8px;
+}
+
+
+
+
+
+.content div{
+  padding: 3px;
+  background-color: white;
+}
+
+
+
+
+section div img{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+
+}
 
 footer{
   display: block;
